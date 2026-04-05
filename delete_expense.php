@@ -1,0 +1,1 @@
+<?php header("Location: process/expenses.php?delete=".$_GET['id']); ?>
