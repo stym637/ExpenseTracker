@@ -1,6 +1,7 @@
 <?php
 include("../config/db.php");
 
+<<<<<<< HEAD
 if (!isset($_SESSION['user_id'])) {
     header("Location: ../auth/login.php");
     exit;
@@ -17,4 +18,9 @@ if (isset($_POST['add'])) {
     }
     header("Location: ../categories.php");
     exit;
+=======
+if(isset($_POST['add'])){
+$conn->query("INSERT INTO categories(user_id,name) VALUES({$_SESSION['user_id']},'{$_POST['name']}')");
+header("Location: ../categories.php");
+>>>>>>> dd2a3ec1827e6eebc1fea3dd9878270b549aa490
 }

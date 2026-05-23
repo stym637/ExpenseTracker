@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 $currentPage = basename($_SERVER["PHP_SELF"]);
 $displayName = trim((string) ($_SESSION['user_name'] ?? ''));
@@ -71,3 +72,14 @@ if ($initials === '') {
         <span class="nav-emoji">🚪</span> Logout
     </a>
 </aside>
+=======
+<div class="sidebar">
+<h2>💰 Expense Tracker</h2>
+<a href="dashboard.php">Dashboard</a>
+<a href="expenses.php">Expenses</a>
+<a href="add_expense.php">Add</a>
+<a href="categories.php">Categories</a>
+<a href="reports.php">Reports</a>
+<a href="auth/logout.php">Logout</a>
+</div>
+>>>>>>> dd2a3ec1827e6eebc1fea3dd9878270b549aa490

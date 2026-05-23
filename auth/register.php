@@ -1,4 +1,5 @@
 <?php include("../config/db.php"); ?>
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,3 +34,11 @@ Already have an account? <a href="login.php">Login</a>
 
 </body>
 </html>
+=======
+<form action="../process/auth.php" method="POST">
+<input name="name" placeholder="Name" required>
+<input name="email" required>
+<input type="password" name="password" required>
+<button name="register">Register</button>
+</form>
+>>>>>>> dd2a3ec1827e6eebc1fea3dd9878270b549aa490

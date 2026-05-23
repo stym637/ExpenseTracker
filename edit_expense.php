@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 include("config/db.php");
 include("includes/auth_guard.php");
@@ -66,3 +67,21 @@ $categories = $conn->query("SELECT id, name FROM categories WHERE user_id=$uid O
 </div>
 
 <?php include("includes/footer.php"); ?>
+=======
+<?php include("config/db.php"); include("includes/header.php"); include("includes/sidebar.php");
+$id=$_GET['id'];
+$e=$conn->query("SELECT * FROM expenses WHERE id=$id")->fetch_assoc();
+?>
+
+<div class="main">
+<form action="process/expenses.php" method="POST" class="form">
+
+<input type="hidden" name="id" value="<?php echo $e['id']; ?>">
+<input name="amount" value="<?php echo $e['amount']; ?>">
+<input type="date" name="date" value="<?php echo $e['expense_date']; ?>">
+
+<button name="update">Update</button>
+
+</form>
+</div>
+>>>>>>> dd2a3ec1827e6eebc1fea3dd9878270b549aa490

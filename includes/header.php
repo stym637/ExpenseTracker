@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -13,3 +14,13 @@ if (session_status() === PHP_SESSION_NONE) {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<title>Expense Tracker</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body></body>
+>>>>>>> dd2a3ec1827e6eebc1fea3dd9878270b549aa490

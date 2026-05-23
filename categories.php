@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 include("config/db.php");
 include("includes/auth_guard.php");
@@ -37,3 +38,13 @@ $items = $conn->query("SELECT id, name FROM categories WHERE user_id=$uid ORDER 
 </div>
 
 <?php include("includes/footer.php"); ?>
+=======
+<?php include("config/db.php"); include("includes/header.php"); include("includes/sidebar.php"); ?>
+
+<div class="main">
+<form action="process/category.php" method="POST">
+<input name="name" placeholder="Category">
+<button name="add">Add</button>
+</form>
+</div>
+>>>>>>> dd2a3ec1827e6eebc1fea3dd9878270b549aa490
